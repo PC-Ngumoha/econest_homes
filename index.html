@@ -1,31 +1,261 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Econest Homes</title>
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-</head>
-<body class="bg-gray-100 text-gray-900">
-  <header class="bg-green-500 p-4 text-white">
-    <h1 class="text-3xl font-bold">Econest Homes</h1>
-  </header>
-  <main class="p-4">
-    <section class="mb-4">
-      <h2 class="text-2xl font-semibold">Welcome to Econest Homes</h2>
-      <p class="mt-2">Your dream home awaits you. Explore our wide range of eco-friendly homes designed to suit your lifestyle.</p>
-    </section>
-    <section>
-      <h2 class="text-2xl font-semibold">Our Services</h2>
-      <ul class="list-disc list-inside mt-2">
-        <li>Eco-friendly home designs</li>
-        <li>Energy-efficient solutions</li>
-        <li>Sustainable building materials</li>
-      </ul>
-    </section>
-  </main>
-  <footer class="bg-green-500 p-4 text-white mt-4">
-    <p>&copy; 2023 Econest Homes. All rights reserved.</p>
-  </footer>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Econest Homes</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              'forest-green': '#2E7D32',
+              'earthy-beige': '#F5F5DC',
+              'sky-blue': '#4FC3F7',
+              'golden-yellow': '#FFD54F',
+              'soft-gray': '#E0E0E0',
+              'dark-charcoal': '#424242',
+              'very-light-green': '#E8F5E9',
+            },
+            fontFamily: {
+              poppins: ['Poppins', 'sans-serif'],
+              lora: ['Lora', 'serif'],
+              montserrat: ['Montserrat', 'sans-serif'],
+              inter: ['Inter', 'sans-serif'],
+            },
+          },
+        },
+      };
+    </script>
+
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/9721a30d36.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body class="bg-earthy-beige text-gray-900">
+    <!-- Navbar -->
+    <header
+      class="bg-transparent p-4 flex justify-between items-center shadow-md"
+    >
+      <h1
+        class="text-3xl text-forest-green tracking-wider font-inter font-light"
+      >
+        EcoNest
+      </h1>
+      <button
+        class="w-[8%] mr-4 capitalize text-earthy-beige bg-sky-blue p-2 rounded-md font-bold"
+      >
+        contact us !
+      </button>
+    </header>
+    <!-- Main Content -->
+    <main class="w-full">
+      <!-- Hero -->
+      <section class="relative h-screen w-full">
+        <img
+          src="images/eco_home_garden.jpg"
+          alt="Eco Home Garden"
+          class="absolute inset-0 w-full h-full object-cover object-center z-0"
+        />
+        <div
+          class="relative z-10 p-8 w-full h-full flex bg-black bg-opacity-60 justify-center items-center"
+        >
+          <div class="w-[35%]">
+            <h2
+              class="text-7xl font-poppins text-earthy-beige mb-4 capitalize font-extrabold leading-relaxed tracking-wide"
+            >
+              Sustainable living made simple
+            </h2>
+
+            <button
+              class="bg-sky-blue text-earthy-beige font-montserrat p-4 rounded-md font-semibold capitalize"
+            >
+              explore our homes
+            </button>
+          </div>
+
+          <div class="w-[55%] flex flex-col h-[60%] justify-between">
+            <div
+              class="bg-white bg-opacity-10 backdrop-blur-md border border-golden-yellow text-soft-gray p-4 rounded-md shadow-lg w-[35%] text-center"
+            >
+              <h3 class="text-md font-light font-montserrat">
+                Homes you can afford
+              </h3>
+            </div>
+            <div
+              class="bg-white bg-opacity-10 backdrop-blur-md border border-golden-yellow text-soft-gray p-4 rounded-md shadow-lg w-[35%] place-self-end text-center"
+            >
+              <h3 class="text-md font-light font-montserrat">
+                Built with excellence
+              </h3>
+            </div>
+            <div
+              class="bg-white bg-opacity-10 backdrop-blur-md border border-golden-yellow text-soft-gray p-4 rounded-md shadow-lg w-[35%] mx-auto text-center"
+            >
+              <h3 class="text-md font-light font-montserrat">
+                Save the planet
+              </h3>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Sustainable Living Options -->
+      <section class="w-full py-16">
+        <h2
+          class="text-4xl font-poppins font-bold text-forest-green text-center mb-4"
+        >
+          Sustainable Living Options
+        </h2>
+        <p class="text-xl font-lora text-dark-charcoal text-center mb-12">
+          Discover homes built with sustainability at top of mind
+        </p>
+        <div class="flex flex-col items-center space-y-12">
+          <!-- Card 1 -->
+          <div class="flex w-[80%] h-[80vh] bg-transparent">
+            <img
+              src="images/home_1.jpg"
+              alt="Sustainable Home 1"
+              class="w-1/2 h-full object-cover"
+            />
+            <div class="w-1/2 flex flex-col justify-between p-8">
+              <h3
+                class="text-3xl font-poppins font-semibold text-forest-green mb-4 capitalize"
+              >
+                cliff house
+              </h3>
+              <p class="text-lg font-lora text-dark-charcoal mb-6">
+                Discover the perfect blend of rustic charm and modern
+                sustainability with our Cliff House. Nestled in nature, this
+                home offers breathtaking views and eco-friendly features that
+                ensure a harmonious living experience.
+              </p>
+              <button
+                class="bg-sky-blue text-earthy-beige font-montserrat p-4 rounded-md font-semibold capitalize w-[40%]"
+              >
+                Contact Us !
+              </button>
+            </div>
+          </div>
+          <!-- Card 2 -->
+          <div class="flex w-[80%] h-[80vh] bg-transparent">
+            <div class="w-1/2 flex flex-col justify-between p-8">
+              <h3
+                class="text-3xl font-poppins font-semibold text-forest-green mb-4 capitalize"
+              >
+                lumber cottage
+              </h3>
+              <p class="text-lg font-lora text-dark-charcoal mb-6">
+                Experience the warmth and charm of our eco-friendly Lumber
+                Cottage, designed to blend seamlessly with nature while
+                providing modern comforts.
+              </p>
+              <button
+                class="bg-sky-blue text-earthy-beige font-montserrat p-4 rounded-md font-semibold capitalize w-[40%]"
+              >
+                Contact Us !
+              </button>
+            </div>
+            <img
+              src="images/home_2.jpg"
+              alt="Sustainable Home 2"
+              class="w-1/2 h-full object-cover"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- Why EcoNest Section -->
+      <section class="w-full py-16">
+        <h2
+          class="text-4xl font-poppins font-bold text-forest-green text-center mb-4"
+        >
+          Why EcoNest ?
+        </h2>
+        <p class="text-xl font-lora text-dark-charcoal text-center mb-12">
+          Why you can trust that we're always your best bet for sustainable
+          homes
+        </p>
+        <div class="flex justify-around mt-4 space-x-12 w-[80%] mx-auto">
+          <!-- Icon 1 -->
+          <div class="flex flex-col items-center">
+            <i class="fas fa-leaf text-golden-yellow text-8xl mb-4"></i>
+            <p class="text-dark-charcoal text-lg font-lora italic">
+              Eco-friendly materials
+            </p>
+          </div>
+          <!-- Icon 2 -->
+          <div class="flex flex-col items-center">
+            <i class="fas fa-credit-card text-golden-yellow text-8xl mb-4"></i>
+            <p class="text-dark-charcoal text-lg font-lora italic">
+              Affordable pricing
+            </p>
+          </div>
+          <!-- Icon 3 -->
+          <div class="flex flex-col items-center">
+            <i class="fas fa-puzzle-piece text-golden-yellow text-8xl mb-4"></i>
+            <p class="text-dark-charcoal text-lg font-lora italic">
+              Tailored to your needs
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Footer -->
+    <footer class="bg-green-600 text-white p-4 mt-8">
+      <p>&copy; 2023 Econest Homes. All rights reserved.</p>
+    </footer>
+  </body>
 </html>
+
+<!-- Colors:
+
+Primary Colors:
+- Forest Green: #2E7D32
+- Earthy Beige: #F5F5DC
+
+Secondary Colors:
+- Sky Blue: #4FC3F7
+- Golden Yellow: #FFD54F
+
+Accent Colors:
+- Soft Gray: #E0E0E0
+- Dark Charcoal: #424242
+
+Extra:
+- Very Light Green: #E8F5E9
+
+
+Typography:
+
+Headings:
+ - font: Poppins
+ - h1: 48, h2: 36, h3: 24
+
+Subheadings:
+ - font: Lora
+ - 20
+
+Paragraph:
+ - font: Lora
+ - 16
+
+Button Text:
+ - font: Montserrat (Regular)
+ - 16
+
+Captions:
+ - font: Montserrat (Light)
+ - 14 -->

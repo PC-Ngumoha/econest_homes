@@ -12,6 +12,12 @@
       rel="stylesheet"
     />
 
+    <!-- Flowbite CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/flowbite@3.0.0/dist/flowbite.min.css"
+      rel="stylesheet"
+    />
+
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -43,6 +49,13 @@
       src="https://kit.fontawesome.com/9721a30d36.js"
       crossorigin="anonymous"
     ></script>
+
+    <!-- Custom styles -->
+    <style>
+      .circular {
+        clip-path: circle(50% at 50% 50%);
+      }
+    </style>
   </head>
   <body class="bg-earthy-beige text-gray-900">
     <!-- Navbar -->
@@ -119,7 +132,7 @@
         >
           Sustainable Living Options
         </h2>
-        <p class="text-xl font-lora text-dark-charcoal text-center mb-12">
+        <p class="text-md font-lora text-dark-charcoal text-center mb-12">
           Discover homes built with sustainability at top of mind
         </p>
         <div class="flex flex-col items-center space-y-12">
@@ -184,7 +197,7 @@
         >
           Why EcoNest ?
         </h2>
-        <p class="text-xl font-lora text-dark-charcoal text-center mb-12">
+        <p class="text-md font-lora text-dark-charcoal text-center mb-12">
           Why you can trust that we're always your best bet for sustainable
           homes
         </p>
@@ -225,46 +238,44 @@
               alt="Plan 1"
               class="w-1/2 object-cover rounded-l-lg"
             />
-            <div class="w-1/2 p-8 flex flex-col justify-center">
-              <h3
-                class="text-8xl font-bold mb-2 text-dark-charcoal font-poppins"
-              >
-                01
-              </h3>
-              <h4
-                class="text-2xl font-semibold text-forest-green font-poppins mb-4"
-              >
-                We Plan
-              </h4>
-              <p
-                class="text-lg font-lora text-dark-charcoal font-light text-sm"
-              >
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
-                nec odio. Praesent libero. Sed cursus ante dapibus diam.
-              </p>
+            <div class="w-1/2 p-8 flex flex-col justify-around">
+              <h3 class="text-8xl mb-2 text-dark-charcoal font-poppins">01</h3>
+              <div>
+                <h4
+                  class="text-2xl font-semibold text-forest-green font-poppins mb-4"
+                >
+                  We Plan
+                </h4>
+                <p
+                  class="text-lg font-lora text-dark-charcoal font-light text-sm"
+                >
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Integer nec odio. Praesent libero. Sed cursus ante dapibus
+                  diam.
+                </p>
+              </div>
             </div>
           </div>
           <!-- Card 2 -->
           <div
             class="flex w-[80%] bg-transparent rounded-lg overflow-hidden my-4"
           >
-            <div class="w-1/2 p-8 flex flex-col justify-center">
-              <h3
-                class="text-8xl font-bold mb-2 text-dark-charcoal font-poppins"
-              >
-                02
-              </h3>
-              <h4
-                class="text-2xl font-semibold text-forest-green font-poppins mb-4"
-              >
-                We Design
-              </h4>
-              <p
-                class="text-lg font-lora text-dark-charcoal font-light text-sm"
-              >
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
-                nec odio. Praesent libero. Sed cursus ante dapibus diam.
-              </p>
+            <div class="w-1/2 p-8 flex flex-col justify-around">
+              <h3 class="text-8xl mb-2 text-dark-charcoal font-poppins">02</h3>
+              <div>
+                <h4
+                  class="text-2xl font-semibold text-forest-green font-poppins mb-4"
+                >
+                  We Design
+                </h4>
+                <p
+                  class="text-lg font-lora text-dark-charcoal font-light text-sm"
+                >
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Integer nec odio. Praesent libero. Sed cursus ante dapibus
+                  diam.
+                </p>
+              </div>
             </div>
             <img
               src="images/we_design.png"
@@ -281,46 +292,44 @@
               alt="Plan 1"
               class="w-1/2 object-cover rounded-l-lg"
             />
-            <div class="w-1/2 p-8 flex flex-col justify-center">
-              <h3
-                class="text-8xl font-bold mb-2 text-dark-charcoal font-poppins"
-              >
-                03
-              </h3>
-              <h4
-                class="text-2xl font-semibold text-forest-green font-poppins mb-4"
-              >
-                We Build
-              </h4>
-              <p
-                class="text-lg font-lora text-dark-charcoal font-light text-sm"
-              >
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
-                nec odio. Praesent libero. Sed cursus ante dapibus diam.
-              </p>
+            <div class="w-1/2 p-8 flex flex-col justify-around">
+              <h3 class="text-8xl mb-2 text-dark-charcoal font-poppins">03</h3>
+              <div>
+                <h4
+                  class="text-2xl font-semibold text-forest-green font-poppins mb-4"
+                >
+                  We Build
+                </h4>
+                <p
+                  class="text-lg font-lora text-dark-charcoal font-light text-sm"
+                >
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Integer nec odio. Praesent libero. Sed cursus ante dapibus
+                  diam.
+                </p>
+              </div>
             </div>
           </div>
           <!-- Card 4 -->
           <div
             class="flex w-[80%] bg-transparent rounded-lg overflow-hidden my-4"
           >
-            <div class="w-1/2 p-8 flex flex-col justify-center">
-              <h3
-                class="text-8xl font-bold mb-2 text-dark-charcoal font-poppins"
-              >
-                04
-              </h3>
-              <h4
-                class="text-2xl font-semibold text-forest-green font-poppins mb-4"
-              >
-                You Live Green
-              </h4>
-              <p
-                class="text-lg font-lora text-dark-charcoal font-light text-sm"
-              >
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
-                nec odio. Praesent libero. Sed cursus ante dapibus diam.
-              </p>
+            <div class="w-1/2 p-8 flex flex-col justify-around">
+              <h3 class="text-8xl mb-2 text-dark-charcoal font-poppins">04</h3>
+              <div>
+                <h4
+                  class="text-2xl font-semibold text-forest-green font-poppins mb-4"
+                >
+                  You Live Green
+                </h4>
+                <p
+                  class="text-lg font-lora text-dark-charcoal font-light text-sm"
+                >
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Integer nec odio. Praesent libero. Sed cursus ante dapibus
+                  diam.
+                </p>
+              </div>
             </div>
             <img
               src="images/you_live_green.png"
@@ -332,22 +341,229 @@
       </section>
 
       <!-- Testimonials Section -->
-      <section>
+      <section class="mb-6">
         <h2
           class="text-4xl font-poppins font-bold text-forest-green text-center mb-4"
         >
           Testimonials
         </h2>
-        <p class="text-xl font-lora text-dark-charcoal text-center mb-12">
+        <p class="text-md font-lora text-dark-charcoal text-center mb-12">
           What our customers have to say about us. Why you should trust us to
           deliver.
         </p>
+
+        <!-- Carousel -->
+
+        <div
+          id="default-carousel"
+          class="relative w-full h-[60vh]"
+          data-carousel="slide"
+        >
+          <!-- Carousel wrapper -->
+          <div class="relative h-[80%] overflow-hidden rounded-lg md:h-96">
+            <!-- Item 1 -->
+            <div class="hidden duration-1000 ease-in-out" data-carousel-item>
+              <!-- Testimonial Card 1-->
+              <div class="w-[60%] h-[100%] mx-auto flex justify-center">
+                <img
+                  src="images/persona_1.jpg"
+                  alt="Image of a key person giving a testimonial"
+                  class="w-[280px] h-[280px] circular object-auto"
+                />
+                <div
+                  class="max-w-[50%] ml-2 py-8 px-4 h-[80%] place-self-end bg-golden-yellow flex flex-col justify-between rounded-tl-[40px] rounded-br-[40px]"
+                >
+                  <header class="ml-4">
+                    <h1
+                      class="text-forest-green text-4xl font-poppins font-bold tracking-wide"
+                    >
+                      Hamdalat A.
+                    </h1>
+                    <span
+                      class="text-dark-charcoal font-bold font-montserrat tracking-tight capitalize text-sm"
+                      >Sustainability enthusiast and homeowner</span
+                    >
+                  </header>
+
+                  <p
+                    class="text-dark-charcoal ml-4 p-4 leading-9 relative mt-4 font-light font-lora"
+                  >
+                    <em
+                      class="text-forest-green font-bold font-montserrat text-[100px] absolute -left-8 top-8"
+                      >&OpenCurlyDoubleQuote;</em
+                    >
+                    <br />
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Vitae dolore ullam deserunt nobis quia voluptatem nemo ex
+                    voluptate suscipit nihil? Repellat reiciendis sapiente rem
+                    aut tempore dolor quia aspernatur accusantium?
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- Item 2 -->
+            <div class="hidden duration-1000 ease-in-out" data-carousel-item>
+              <!-- Testimonial Card 2-->
+              <div class="w-[60%] h-[100%] mx-auto flex justify-center">
+                <img
+                  src="images/persona_2.jpg"
+                  alt="Image of a key person giving a testimonial"
+                  class="w-[280px] h-[280px] circular object-auto"
+                />
+                <div
+                  class="max-w-[50%] ml-2 py-8 px-4 h-[80%] place-self-end bg-golden-yellow flex flex-col justify-between rounded-tl-[40px] rounded-br-[40px]"
+                >
+                  <header class="ml-4">
+                    <h1
+                      class="text-forest-green text-4xl font-poppins font-bold tracking-wide"
+                    >
+                      Chidi C.
+                    </h1>
+                    <span
+                      class="text-dark-charcoal font-bold font-montserrat tracking-tight capitalize text-sm"
+                      >new homeowner in nigeria</span
+                    >
+                  </header>
+
+                  <p
+                    class="text-dark-charcoal ml-4 p-4 leading-9 relative mt-4 font-light font-lora"
+                  >
+                    <em
+                      class="text-forest-green font-bold font-montserrat text-[100px] absolute -left-8 top-8"
+                      >&OpenCurlyDoubleQuote;</em
+                    >
+                    <br />
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Vitae dolore ullam deserunt nobis quia voluptatem nemo ex
+                    voluptate suscipit nihil? Repellat reiciendis sapiente rem
+                    aut tempore dolor quia aspernatur accusantium?
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- Item 3 -->
+            <div class="hidden duration-1000 ease-in-out" data-carousel-item>
+              <!-- Testimonial Card 3-->
+              <div class="w-[60%] h-[100%] mx-auto flex justify-center">
+                <img
+                  src="images/persona_3.jpg"
+                  alt="Image of a key person giving a testimonial"
+                  class="w-[280px] h-[280px] circular object-auto"
+                />
+                <div
+                  class="max-w-[50%] ml-2 py-8 px-4 h-[80%] place-self-end bg-golden-yellow flex flex-col justify-between rounded-tl-[40px] rounded-br-[40px]"
+                >
+                  <header class="ml-4">
+                    <h1
+                      class="text-forest-green text-4xl font-poppins font-bold tracking-wide"
+                    >
+                      Femi K.
+                    </h1>
+                    <span
+                      class="text-dark-charcoal font-bold font-montserrat tracking-tight capitalize text-sm"
+                      >social engineer and tech bro</span
+                    >
+                  </header>
+
+                  <p
+                    class="text-dark-charcoal ml-4 p-4 leading-9 relative mt-4 font-light font-lora"
+                  >
+                    <em
+                      class="text-forest-green font-bold font-montserrat text-[100px] absolute -left-8 top-8"
+                      >&OpenCurlyDoubleQuote;</em
+                    >
+                    <br />
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Vitae dolore ullam deserunt nobis quia voluptatem nemo ex
+                    voluptate suscipit nihil? Repellat reiciendis sapiente rem
+                    aut tempore dolor quia aspernatur accusantium?
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Form Section -->
+      <section class="w-[80%] mx-auto py-16 bg-transparent flex">
+        <div class="flex-1 mr-4">
+          <h2 class="text-6xl font-lora font-bold text-forest-green mb-4">
+            Contact Us
+          </h2>
+          <p class="text-sm font-lora text-dark-charcoal mb-12">
+            We'd love to hear from you! Please fill out the form below to get in
+            touch.
+          </p>
+        </div>
+        <div class="w-[60%] mx-auto p-8 rounded-lg flex-1">
+          <form action="#" method="POST" class="space-y-6">
+            <input
+              type="text"
+              id="name"
+              name="name"
+              class="w-full p-4 border border-forest-green rounded-md bg-transparent"
+              placeholder="Your name"
+              required
+            />
+            <input
+              type="email"
+              id="email"
+              name="email"
+              class="w-full p-4 border border-forest-green rounded-md bg-transparent"
+              placeholder="Your email"
+              required
+            />
+            <textarea
+              id="message"
+              name="message"
+              rows="6"
+              class="w-full p-4 border border-forest-green rounded-md bg-transparent"
+              placeholder="Let us know your needs"
+              required
+            ></textarea>
+            <button
+              type="submit"
+              class="bg-sky-blue text-earthy-beige font-montserrat p-4 rounded-md font-semibold capitalize w-full"
+            >
+              Send Message
+            </button>
+          </form>
+        </div>
       </section>
     </main>
     <!-- Footer -->
-    <footer class="bg-green-600 text-white p-4 mt-8">
-      <p>&copy; 2023 Econest Homes. All rights reserved.</p>
+    <footer
+      class="bg-sky-blue text-soft-gray p-8 mt-8 flex flex-col items-center"
+    >
+      <h2 class="text-2xl font-poppins mb-4 tracking-wider">EcoNest</h2>
+      <div class="flex space-x-4">
+        <a
+          href="https://www.facebook.com"
+          target="_blank"
+          class="text-dark-charcoal text-2xl"
+        >
+          <i class="fab fa-facebook"></i>
+        </a>
+        <a
+          href="https://www.twitter.com"
+          target="_blank"
+          class="text-dark-charcoal text-2xl"
+        >
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a
+          href="https://www.linkedin.com"
+          target="_blank"
+          class="text-dark-charcoal text-2xl"
+        >
+          <i class="fab fa-linkedin"></i>
+        </a>
+      </div>
     </footer>
+
+    <!-- Flowbite JS -->
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@3.0.0/dist/flowbite.min.js"></script>
   </body>
 </html>
 
